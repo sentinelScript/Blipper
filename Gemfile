@@ -58,5 +58,16 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  gem 'pg' 
+end
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Gems added for dev, test, production
+
+gem 'devise'
+gem 'semantic-ui-sass', '~> 2.3', '>= 2.3.1.2'
+gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
